@@ -1,4 +1,7 @@
-<div>
-    <h2> Sharing data between components with rxJS</h2>
-    {{message}}
-</div>
+<section aria-labelledby="sharing-title">
+  <h2 id="sharing-title">Sharing data between components with RxJS</h2>
+  <p>Messages stay in this page. Nothing is sent to another person.</p>
+  <h3>Parent component</h3>
+  <p data-testid="parent-message" aria-live="polite">{{ message$ | async }}</p>
+  <app-sibling></app-sibling>
+</section>

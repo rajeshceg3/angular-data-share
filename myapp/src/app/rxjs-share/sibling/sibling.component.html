@@ -1,8 +1,7 @@
-<div>
-    <h3>Another component</h3>
-    <p>{{message}}</p>
-    <div class="form-group">
-        <input type="text" name="message" #messageText class="form-control">
-        <button class="btn btn-primary form-control" (click)="newMessage(messageText.value)">Send Message</button>
-    </div>
-  </div>
+<section aria-labelledby="sibling-title">
+  <h3 id="sibling-title">Another component</h3>
+  <p data-testid="sibling-message">{{ message$ | async }}</p>
+  <label for="message">Message</label>
+  <input id="message" type="text" #messageText>
+  <button type="button" (click)="newMessage(messageText.value)">Send Message</button>
+</section>

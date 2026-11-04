@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 Arial, sans-serif; color: #203045; background: #f6f8fa; }
+nav { display: flex; gap: 24px; padding: 16px 24px; background: #173955; }
+nav a { color: white; }
+main { max-width: 760px; margin: 24px auto; padding: 0 20px; }
+section { margin: 16px 0; }
+label { display: block; }
+input { width: 100%; max-width: 480px; padding: 10px; border: 1px solid #718397; border-radius: 4px; font: inherit; }
+button { display: block; margin-top: 12px; padding: 10px 18px; font: inherit; background: #185789; color: white; border: 0; border-radius: 4px; cursor: pointer; }
+[data-testid] { overflow-wrap: anywhere; min-height: 24px; }
